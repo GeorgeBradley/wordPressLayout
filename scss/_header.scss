@@ -1,0 +1,19 @@
+.header 
+{
+    
+    padding:20px;
+    width:100%;
+    background-color: $primaryColor;
+    &-nav 
+    {
+        width:100%;
+        padding:10px;
+     
+ 
+        .nav-items 
+        {
+
+            width:100%;
+        }
+    }
+}
