@@ -1,0 +1,33 @@
+
+.hero {
+  
+ 
+    &-img-item {
+       width:100%;
+       height:100%;
+       img {
+           width:100%;
+           height:100%;
+           object-fit: cover;
+       }
+    }
+    &-img-caption {
+        position: absolute;
+        z-index: 1;
+    }
+    &-banner {
+    
+        color:white;
+        font-size: 1.6em;
+        position: relative;
+        grid-column: 1 / 6 ;
+        img 
+        {
+            width:100%;
+          
+            height:300px;
+            object-position: center;
+            object-fit: cover;
+        }
+    }
+}
