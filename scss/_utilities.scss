@@ -48,7 +48,7 @@
     &-span-5 {
 
     }
-    gap:10px;
+    gap:30px 10px;
 }
 .flex 
 {
@@ -73,6 +73,10 @@
     }
     &-js-c {
         justify-self: center;
+    }
+
+    &-js-e {
+        justify-self: end;
     }
 }
 
@@ -268,6 +272,10 @@
     }
 }
 
+
+.bs {
+    box-shadow: $boxShadow;
+}
 
 
 

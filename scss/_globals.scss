@@ -1,27 +1,68 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-body, html 
-{
-    margin:0;
-    padding:0;
+
+body,
+html {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     background-color: ghostwhite;
 }
 
 a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-li 
-{
+li {
     list-style-type: none;
 }
-.container {
 
+.container {}
+
+.hide-for-mobile {
+
+    @include breakpoint-down(medium) {
+        display: none;
+    }
 }
 
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+
+.grid-col
+{
+    &-sm 
+    {
+        @include breakpoint-up(small) 
+        {
+            grid-template-columns: 1fr;
+            
+        }
+    }
+
+    &-md 
+    {
+        @include breakpoint-up(medium) 
+        {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &-lg 
+    {
+        @include breakpoint-up(large)
+        {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+    

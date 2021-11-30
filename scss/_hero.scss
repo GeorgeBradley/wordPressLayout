@@ -7,32 +7,34 @@
       color:white;
        width:100%;
        height:100%;
-       img {
+       transition: all 200ms ease-in-out;
+
+       img 
+       {
            width:100%;
            height:100%;
            object-fit: cover;
        }
-       &:hover {
+       &:hover 
+       {
         filter:invert(0.3);
         cursor: pointer;
         background-color: aqua;
-    }
+        }
     }
     &-img-caption {
         font-size: 1.2em;
         position: absolute;
         z-index: 1;
     }
-    &-banner {
-    
+
+    &-banner { 
         color:white;
         font-size: 1.6em;
-       
         grid-column: 1 / 6 ;
         img 
         {
-            width:100%;
-          
+            width:100%;       
             height:300px;
             object-position: center;
             object-fit: cover;
