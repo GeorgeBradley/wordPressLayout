@@ -19,18 +19,24 @@
                 background-color: $TertiaryColor;
             }
 
-            .burger-menu > span 
-            {
-                display: block;
-                width: 26px;
-                height: 2px;
-                background-color: black;
-            }
             
-            :not(:last-child) 
-            {
-                margin-bottom: 6px;
-            }
         }
     }
+    
+    .burger-menu 
+    {
+        > span 
+        {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: black;
+        }
+        
+        :not(:last-child) 
+        {
+            margin-bottom: 6px;
+        }
+    }
+    
 }

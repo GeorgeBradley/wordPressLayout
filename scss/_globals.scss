@@ -23,46 +23,21 @@ li {
     list-style-type: none;
 }
 
-.container {}
 
-.hide-for-mobile {
-
-    @include breakpoint-down(medium) {
-        display: none;
+.hide-for-mobile 
+{
+    @include breakpoint-down(large) {
+        display: none !important;
     }
 }
 
-.hide-for-desktop {
+.hide-for-desktop 
+{
     @include breakpoint-up(large) {
         display: none;
     }
 }
 
-.grid-col
-{
-    &-sm 
-    {
-        @include breakpoint-up(small) 
-        {
-            grid-template-columns: 1fr;
-            
-        }
-    }
 
-    &-md 
-    {
-        @include breakpoint-up(medium) 
-        {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
 
-    &-lg 
-    {
-        @include breakpoint-up(large)
-        {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-}
     

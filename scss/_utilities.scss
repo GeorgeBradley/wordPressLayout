@@ -16,39 +16,182 @@
 .img-overlay {
     filter:brightness(60%);
 }
+
+.gutter {
+    &-1 {
+        gap:0.4em;
+    }
+    &-2 {
+        gap:0.8em;
+    }
+    &-3 {
+        gap:1.2em;
+    }
+    &-4 {
+        gap:1.6em;
+    }
+    &-5 {
+        gap:2em;
+    }
+}
 .grid {
     display:grid;
-    &-col-1{
-        grid-template-columns: 1fr;
+
+
+    &-sm-col-1 
+    {
+        @include breakpoint-up(small) 
+        {
+            grid-template-columns: 1fr;
+        }
     }
-    &-col-2{
-        grid-template-columns: repeat(2, 1fr);
+    &-sm-col-2
+    {
+        @include breakpoint-up(small) 
+        {
+            grid-template-columns: 1fr 1fr;          
+        }
     }
-    &-col-3{
-        grid-template-columns: repeat(3, 1fr);
+    &-sm-col-3 
+    {
+        @include breakpoint-up(small) 
+        {
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
     }
-    &-col-4{
-        grid-template-columns: repeat(4, 1fr);
+
+    &-sm-col-4
+    {
+        @include breakpoint-up(small) 
+        {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
-    &-col-5{
-        grid-template-columns: repeat(5, 1fr);
-    }
-    &-span-1{ 
-        grid-column: 1;
-    }
-    &-span-2{ 
-        
-    }
-    &-span-3{ 
-        
-    }
-    &-span-4{ 
-        
-    }
-    &-span-5 {
+
+    &-md-col-1 {
+        @include breakpoint-up(medium) 
+        {
+            grid-template-columns: repeat(1,1fr);
+           
+        }
 
     }
-    gap:30px 10px;
+    &-md-col-2 {
+        @include breakpoint-up(medium) 
+        {
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        
+    }
+    &-md-col-3 {
+        @include breakpoint-up(medium) 
+        {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+    }
+    &-md-col-4 {
+        @include breakpoint-up(medium) 
+        {
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+    }
+
+    &-lg-col-1 {
+        @include breakpoint-up(large) 
+        {
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+
+    }
+    &-lg-col-2 {
+        @include breakpoint-up(large) 
+        {
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+    }
+    &-lg-col-3 {
+        @include breakpoint-up(large) 
+        {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+    }
+    &-lg-col-4 {
+        @include breakpoint-up(large) 
+        {
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+    }
+
+    &-xlg-col-1 {
+        @include breakpoint-up(xlarge) 
+        {
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+    }
+    &-xlg-col-2 {
+        @include breakpoint-up(xlarge) 
+        {
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        
+    }
+    &-xlg-col-3 {
+        @include breakpoint-up(xlarge) 
+        {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+        
+    }
+    &-xlg-col-4 {
+        @include breakpoint-up(xlarge) 
+        {
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        
+    }
+    &-xxlg-col-1 {
+        @include breakpoint-up(xxlarge) 
+        {
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+
+    }
+    &-xxlg-col-2 {
+        @include breakpoint-up(xxlarge) 
+        {
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        
+    }
+    &-xxlg-col-3 {
+        @include breakpoint-up(xxlarge) 
+        {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+    }
+    &-xxlg-col-4 {
+        @include breakpoint-up(xxlarge) 
+        {
+            grid-template-columns: repeat(4,1fr);
+            
+        }
+        
+    }
 }
 .flex 
 {
@@ -71,13 +214,27 @@
     {
         align-items: center;
     }
-    &-js-c {
+    &-ai-l {
+        align-items:flex-end;
+    }
+    &-as-c {
+        align-self: center;
+    }
+    &-js-c 
+    {
         justify-self: center;
     }
 
     &-js-e {
         justify-self: end;
     }
+    &-js-r {
+        justify-self: right;
+    }
+    &-js-l {
+        justify-self: left;
+    }
+  
 }
 
 // Margin all around
@@ -277,6 +434,26 @@
     box-shadow: $boxShadow;
 }
 
+.text-col{
+
+    &-1 {
+        columns: 100px 1;
+    }
+    &-2 {
+        columns: 100px 2;
+    }
+    &-3 {
+        columns:3;
+    }
+    &-4 {
+        columns:4;
+    }
+    &-5 {
+        columns:5;
+    }
+
+
+}
 
 
 
