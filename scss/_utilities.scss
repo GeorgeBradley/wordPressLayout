@@ -9,15 +9,36 @@
 
 .container {
     width:80%;
-    margin:auto;
+    margin: auto;
+ &-md {
+    @include breakpoint-down(large) 
+    {
+        width:95%;
+    }
+ }
+ &-md-f {
+    @include breakpoint-down(large) 
+    {
+        width:100%;
+    }
+ }
+ &-lg {
+    @include breakpoint-down(medium) 
+    {
+        width:95%;
+    }
+ }
+    
 }
 
 
-.img-overlay {
+.img-overlay 
+{
     filter:brightness(60%);
 }
 
 .gutter {
+   
     &-1 {
         gap:0.4em;
     }
@@ -37,6 +58,18 @@
 .grid {
     display:grid;
 
+    &-col-1 {
+        grid-template-columns: 1fr;
+    }
+    &-col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+    &-col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-col-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
     &-sm-col-1 
     {
@@ -259,6 +292,9 @@
 // Margin top
 .m-t
 {
+    &-04 {
+        margin-top:0.4em;
+    }
     &-1{
         margin-top:1em;
     }
@@ -434,23 +470,157 @@
     box-shadow: $boxShadow;
 }
 
-.text-col{
+.txt {
+    &-sm-col-1 
+    {
+        @include breakpoint-up(small) 
+        {
+          columns:1;
+        }
+    }
 
-    &-1 {
-        columns: 100px 1;
+    &-sm-col-2
+    {
+        @include breakpoint-up(small) 
+        {
+          columns:2;
+        }
     }
-    &-2 {
-        columns: 100px 2;
+    &-sm-col-3
+    {
+        @include breakpoint-up(small) 
+        {
+          columns:3;
+        }
     }
-    &-3 {
-        columns:3;
+    &-sm-col-4
+    {
+        @include breakpoint-up(small) 
+        {
+          columns:4;
+        }
     }
-    &-4 {
-        columns:4;
+
+    &-md-col-1 
+    {
+        @include breakpoint-up(medium) 
+        {
+          columns:1;
+        }
     }
-    &-5 {
-        columns:5;
+
+    &-md-col-2
+    {
+        @include breakpoint-up(medium) 
+        {
+          columns:2;
+        }
     }
+    &-md-col-3
+    {
+        @include breakpoint-up(medium) 
+        {
+          columns:3;
+        }
+    }
+    &-md-col-4
+    {
+        @include breakpoint-up(medium) 
+        {
+          columns:4;
+        }
+    }
+    &-lg-col-1 
+    {
+        @include breakpoint-up(large) 
+        {
+          columns:1;
+        }
+    }
+
+    &-lg-col-2
+    {
+        @include breakpoint-up(large) 
+        {
+          columns:2;
+        }
+    }
+    &-lg-col-3
+    {
+        @include breakpoint-up(large) 
+        {
+          columns:3;
+        }
+    }
+    &-lg-col-4
+    {
+        @include breakpoint-up(large) 
+        {
+          columns:4;
+        }
+    }
+
+    &-xlg-col-1 
+    {
+        @include breakpoint-up(xlarge) 
+        {
+          columns:1;
+        }
+    }
+
+    &-xlg-col-2
+    {
+        @include breakpoint-up(xlarge) 
+        {
+          columns:2;
+        }
+    }
+    &-xlg-col-3
+    {
+        @include breakpoint-up(xlarge) 
+        {
+          columns:3;
+        }
+    }
+    &-xlg-col-4
+    {
+        @include breakpoint-up(xlarge) 
+        {
+          columns:4;
+        }
+    }
+
+    &-xxlg-col-1 
+    {
+        @include breakpoint-up(xxlarge) 
+        {
+          columns:1;
+        }
+    }
+
+    &-xxlg-col-2
+    {
+        @include breakpoint-up(xxlarge) 
+        {
+          columns:2;
+        }
+    }
+    &-xxlg-col-3
+    {
+        @include breakpoint-up(xxlarge) 
+        {
+          columns:3;
+        }
+    }
+    &-xxlg-col-4
+    {
+        @include breakpoint-up(xxlarge) 
+        {
+          columns:4;
+        }
+    }
+
+
 
 
 }

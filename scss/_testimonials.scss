@@ -29,7 +29,7 @@
 }
 .testimonials {
 
-    width:100%;
+   
     
     .testimonial-card
     {
@@ -39,7 +39,9 @@
         margin-top:60px;
         position: relative;
         
-
+        img {
+            object-fit: cover;
+        }
        
     }
 }
