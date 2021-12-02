@@ -3,6 +3,9 @@
     text-align: center;
     
 }
+.ta-l {
+    text-align:center;
+}
 .tt-u {
     text-transform: uppercase;
 }
@@ -239,6 +242,9 @@
     &-jc-sb {
         justify-content: space-between;
     }
+    &-jc-se {
+        justify-content: space-evenly;
+    }
     &-jc-c
     {
         justify-content: center;
@@ -247,6 +253,7 @@
     {
         align-items: center;
     }
+    
     &-ai-l {
         align-items:flex-end;
     }
@@ -256,6 +263,9 @@
     &-js-c 
     {
         justify-self: center;
+    }
+    &-as-fs {
+        align-self: flex-start;
     }
 
     &-js-e {

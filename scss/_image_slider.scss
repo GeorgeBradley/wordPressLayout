@@ -118,6 +118,7 @@
 
     &-item {
       position: absolute;
+      
       top: 0;
       left: 0;
       width: 100%;
@@ -126,9 +127,18 @@
       transition: opacity 2s;
       -webkit-transition: opacity 2s;
 
+      .img-caption {
+        text-align: center;
+        width:20%;
+        margin:auto;
+        z-index: 100;
+        font-size:1.9em;
+        color:white;
+       position: absolute; 
+      }
       img {
       
-      
+        position: relative;
         object-position: center;
         object-fit: cover;
         width:100%;

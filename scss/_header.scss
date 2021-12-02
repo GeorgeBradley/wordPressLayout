@@ -1,6 +1,8 @@
 .header {
 
-
+    position: relative;
+    padding:20px;
+    width:100%;
  
 
     &-menu-dropdown {
@@ -75,9 +77,7 @@
         }
     }
 
-    position: relative;
-    padding:20px;
-    width:100%;
+ 
 
     .logo {
         font-size: 0.8em;
@@ -105,6 +105,10 @@
                 color: rgb(0, 0, 0);
                 transition: 200ms ease-in-out;
                 background-color: $TertiaryColor;
+            }
+            .nav-item-active {
+                color:white;
+                background-color: rgb(77, 77, 233);
             }
 
 
