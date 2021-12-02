@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,58 @@
     <link rel="stylesheet" href="scss/style.css">
     <title>Wordpress Theme</title>
 </head>
+
 <body>
 
-   
+
     <header class="header flex flex-jc-c flex-fd-c">
-        <div class="overlay"></div>
-        <a href="" class="logo ta-c hide-for-mobile"><h1 class="tt-u">George Cottages</h1></a>
-       <div class="container container-md-f">
-        <nav class="header-nav m-t-2 flex flex-fd-c flex-ai-l flex-fd-r flex-jc-sb">
-            
-            <ul class="nav-items flex flex-jc-sb flex-ai-c hide-for-mobile">
-                <li><a href="">Home</a></li>
-                <li><a href="">Landmarks</a></li>
-                <li><a href="">Our Promise</a></li>
-                <li><a href="">Breakfast</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Group & Events</a></li>
-              
-            </ul>
-            <a href="#" class="logo ta-c hide-for-desktop p-l-1"><h1 class="tt-u">George Cottages</h1></a>
-            <a href="#" class="burger-menu hide-for-desktop p-r-1">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </nav>
-       </div>
-       
+        <div class="overlay has-fade"></div>
+        <a href="" class="logo ta-c hide-for-mobile">
+            <h1 class="tt-u">George Cottages</h1>
+        </a>
+        <div class="container container-md-f">
+            <nav class="header-nav m-t-2 flex flex-fd-c flex-ai-l flex-fd-r flex-jc-sb">
+
+                <ul class="nav-items flex flex-jc-sb flex-ai-c hide-for-mobile">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Landmarks</a></li>
+                    <li><a href="">Our Promise</a></li>
+                    <li><a href="">Breakfast</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Group & Events</a></li>
+
+                </ul>
+                <a href="#" class="logo ta-c hide-for-desktop p-l-1">
+                    <h1 class="tt-u">George Cottages</h1>
+                </a>
+                <a href="#" class="burger-menu hide-for-desktop p-r-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+            <div class="header-menu-dropdown has-fade">
+                <a href="">Home</a>
+                <a href="">Landmarks</a>
+                <a href="">Our Promise</a>
+                <a href="">Breakfast</a>
+                <a href="">Blog</a>
+                <a href="">Group & Events</a>
+
+            </div>
+        </div>
+
     </header>
 
-    <section class="hero">
+    <section class="hero m-t-1">
         <div class="container container-md">
             <div class="hero-banner">
-            
-               
+
+
                 <div class="carousel">
                     <input type="radio" id="carousel-1" name="carousel[]" checked>
                     <input type="radio" id="carousel-2" name="carousel[]">
-                 <input type="radio" id="carousel-3" name="carousel[]">
+                    <input type="radio" id="carousel-3" name="carousel[]">
                     <input type="radio" id="carousel-4" name="carousel[]">
                     <input type="radio" id="carousel-5" name="carousel[]">
                     <ul class="carousel-items  carousel-items-w-md">
@@ -56,31 +71,54 @@
                         <li class="carousel-item"><img src="/images/dock.jpeg" alt=""></li>
                         <li class="carousel-item"><img src="/images/pexels-pixabay-53435.jpg" alt=""></li>
                     </ul>
-                 <div class="carousel-prev">
-                     <label for="carousel-1"></label>
-                     <label for="carousel-2"></label>
-                     <label for="carousel-3"></label>
-                     <label for="carousel-4"></label>
-                     <label for="carousel-5"></label>
-                 </div>
-                 <div class="carousel-next">
-                   <label for="carousel-1"></label>
-                   <label for="carousel-2"></label>
-                   <label for="carousel-3"></label>
-                   <label for="carousel-4"></label>
-                   <label for="carousel-5"></label>
-                 </div>
-                 <div class="carousel-nav">
-                   <label for="carousel-1"></label>
-                   <label for="carousel-2"></label>
-                   <label for="carousel-3"></label>
-                   <label for="carousel-4"></label>
-                   <label for="carousel-5"></label>
-                 </div>
-               </div>
+                    <div class="carousel-prev">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                        <label for="carousel-3"></label>
+                        <label for="carousel-4"></label>
+                        <label for="carousel-5"></label>
+                    </div>
+                    <div class="carousel-next">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                        <label for="carousel-3"></label>
+                        <label for="carousel-4"></label>
+                        <label for="carousel-5"></label>
+                    </div>
+                    <div class="carousel-nav">
+                        <label for="carousel-1"></label>
+                        <label for="carousel-2"></label>
+                        <label for="carousel-3"></label>
+                        <label for="carousel-4"></label>
+                        <label for="carousel-5"></label>
+                    </div>
+                </div>
             </div>
 
-            <div class="hero-boxes grid gutter-1 grid-col-2 grid-sm-col-2 grid-md-col-2 grid-md-col-2 grid-lg-col-3 grid-xlg-col-4 grid-gap-1 m-t-04">
+
+            <div class="hero m-t-1">
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">A fresh breeze</h1>
+                    <img src="/images/beach.jpeg" alt="" class="img-overlay">
+                </div>
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Story time</h1>
+                    <img src="/images/cottage-night-time.jpeg" alt="" class="img-overlay">
+                </div>
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Sail away</h1>
+                    <img src="/images/dock.jpeg" alt="" class="img-overlay">
+                </div>
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Enchanting sunsets</h1>
+                    <img src="/images/pexels-photo-4687530.jpeg" alt="" class="img-overlay">
+                </div>
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Sandy beaches</h1>
+                    <img src="/images/pexels-photo-5538798.jpeg" alt="" class="img-overlay">
+                </div>
+            </div>
+            <!-- <div class="hero-boxes">
                 <div class="hero-img-item flex flex-jc-c flex-ai-c">
                     <h1 class="hero-img-caption">Bed and Breakfast</h1>
                     <img src="images/pexels-pixabay-53435.jpg" alt="" class="img-overlay">
@@ -99,100 +137,124 @@
                     <h1 class="hero-img-caption">Bed and Breakfast</h1>
                     <img src="images/pexels-photo-5538798.jpeg" alt="" class="img-overlay">
                 </div>
-            </div>
-        </div> 
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Bed and Breakfast</h1>
+                    <img src="images/dock.jpeg" alt="" class="img-overlay">
+                </div>
+                <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                    <h1 class="hero-img-caption">Bed and Breakfast</h1>
+                    <img src="images/cottage-night-time.jpeg" alt="" class="img-overlay">
+                </div>
+                
+                
+                
+            </div> -->
+        </div>
     </section>
 
     <section class="about m-t-2">
         <div class="container">
             <div class="about-text">
                 <h1 class=" m-b-1">About</h1>
-                <p class="txt-sm-col-1 txt-md-col-2 txt-lg-col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit culpa quidem, aliquid modi cum necessitatibus repudiandae aperiam tempora, harum eligendi libero autem voluptatum explicabo laudantium blanditiis officiis. Cupiditate porro, dicta impedit ducimus iusto excepturi eligendi obcaecati dolor. Pariatur fugiat, rerum nobis illum, quibusdam porro doloribus, odio officiis beatae possimus deleniti! Quia, eius distinctio. Omnis similique facere error eos dolor earum quas veritatis itaque architecto. Vel repudiandae a veritatis illo.</p>
+                <p class="txt-sm-col-1 txt-md-col-2 txt-lg-col-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Laboriosam reprehenderit culpa quidem, aliquid modi cum necessitatibus repudiandae aperiam
+                    tempora, harum eligendi libero autem voluptatum explicabo laudantium blanditiis officiis. Cupiditate
+                    porro, dicta impedit ducimus iusto excepturi eligendi obcaecati dolor. Pariatur fugiat, rerum nobis
+                    illum, quibusdam porro doloribus, odio officiis beatae possimus deleniti! Quia, eius distinctio.
+                    Omnis similique facere error eos dolor earum quas veritatis itaque architecto. Vel repudiandae a
+                    veritatis illo.</p>
 
             </div>
         </div>
     </section>
 
-   <section class="facilities m-t-2">
+    <section class="facilities m-t-2">
 
-    <div class="container">
+        <div class="container">
 
-        <h1>Downstairs Bedroom</h1>
-        
-    </div>
+            <h1>Downstairs Bedroom</h1>
 
-   </section>
+        </div>
+
+    </section>
 
     <section class="testimonials m-t-3 m-b-3">
         <h1 class="ta-c m-b-2">Testimonials</h1>
-      <div class="container">
-        
-        <div class="testimonial-cards grid gutter-2 grid-sm-col-1 grid-md-col-2 grid-lg-col-3">
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark">
-                <div class="img-container">
-                    <img src="images/testimonials/pexels-photo-532220.jpeg" alt="" class="profile-pic bs">
-                </div>
-                <h1 class="m-t-2">Sophie White</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
-            </div>
+        <div class="container">
 
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark" >
-                <div class="img-container">
-                    <img src="images/testimonials/man1.jpeg" alt="" class="profile-pic bs">
+            <div class="testimonial-cards grid gutter-2 grid-sm-col-1 grid-md-col-2 grid-lg-col-3">
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark">
+                    <div class="img-container">
+                        <img src="images/testimonials/pexels-photo-532220.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">Sophie White</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
                 </div>
-                <h1 class="m-t-2">George Bradley</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
-            </div>
 
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
-                <div class="img-container">
-                    <img src="images/testimonials/pexels-photo-762020.jpeg" alt="" class="profile-pic bs">
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark">
+                    <div class="img-container">
+                        <img src="images/testimonials/man1.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">George Bradley</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
                 </div>
-                <h1 class="m-t-2">Sarah Clark</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
-            </div>
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
-                <div class="img-container">
-                    <img src="images/testimonials/man3.jpeg" alt="" class="profile-pic bs">
+
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
+                    <div class="img-container">
+                        <img src="images/testimonials/pexels-photo-762020.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">Sarah Clark</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
                 </div>
-                <h1 class="m-t-2">James Jones</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
-            </div>
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
-                <div class="img-container">
-                    <img src="images/testimonials/man2.jpeg" alt="" class="profile-pic bs">
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
+                    <div class="img-container">
+                        <img src="images/testimonials/man3.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">James Jones</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
                 </div>
-                <h1 class="m-t-2">John Smith</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
-            </div>
-            <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
-                <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
-                <div class="img-container">
-                    <img src="images/testimonials/woman1.jpeg" alt="" class="profile-pic bs">
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
+                    <div class="img-container">
+                        <img src="images/testimonials/man2.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">John Smith</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
                 </div>
-                <h1 class="m-t-2">Joyce Hilton</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>   
+                <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
+                    <img src="images/quote-right-solid.svg" alt="" class="speech-mark flex-js-e">
+                    <div class="img-container">
+                        <img src="images/testimonials/woman1.jpeg" alt="" class="profile-pic bs">
+                    </div>
+                    <h1 class="m-t-2">Joyce Hilton</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia incidunt corrupti ducimus
+                        consequatur saepe fuga suscipit, voluptatibus debitis rerum vel.</p>
+                </div>
             </div>
-         </div>
         </div>
-       
-</section>
 
-<footer>
-   <div class="container m-b-2">
+    </section>
 
-    <p class="ta-c">George Austin Bradley &copy; 2021</p>
-    
+    <footer>
+        <div class="container m-b-2">
+
+            <p class="ta-c">George Austin Bradley &copy; 2021</p>
 
 
-   </div>
-</footer>
-     
+
+        </div>
+    </footer>
+
     <script src="js/javascript.js"></script>
 </body>
+
 </html>
