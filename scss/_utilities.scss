@@ -11,16 +11,38 @@
 }
 
 .container {
-    width:80%;
+    width:85%;
     margin: auto;
- &-md {
+
+
+   
+    
+ &-lg {
     @include breakpoint-down(large) 
     {
         width:95%;
     }
  }
  &-md-f {
-    @include breakpoint-down(large) 
+    @include breakpoint-down(medium) 
+    {
+        width:100%;
+    }
+ }
+ &-lg-f {
+    @include breakpoint-up(large) 
+    {
+        width:100%;
+    }
+ }
+ &-xlg-f {
+    @include breakpoint-up(xlarge) 
+    {
+        width:100%;
+    }
+ }
+ &-xxlg-f {
+    @include breakpoint-down(xxlarge) 
     {
         width:100%;
     }

@@ -12,25 +12,25 @@
 <body>
 
 
-    <header class="header flex flex-jc-c flex-fd-c">
+  
+    <header class="header">
         <div class="overlay has-fade"></div>
-        <a href="" class="logo ta-c hide-for-mobile">
-            <h1 class="tt-u m-t-1">Cornish Holiday Cottages</h1>
-        </a>
+      
         <div class="container container-md-f">
-            <nav class="header-nav m-t-2 flex flex-fd-c flex-ai-l flex-fd-r flex-jc-sb">
-
-                <ul class="nav-items flex flex-jc-se flex-ai-c hide-for-mobile">
-                    <li class=""><a href="#" class="nav-item-active">Home</a></li>
-                    <li><a href="properties.html">Properties</a></li>
+          
+            <nav class="header-nav flex flex-jc-sb">
+                <a href="#" class="logo p-l-1">
+                    <h1 class="tt-u">Cornish Holiday Cottages</h1>
+                </a>
+                <ul class="nav-items flex flex-jc-se flex hide-for-mobile">
+                    <li><a href="index.html" class="nav-item-active">Home</a></li>
+                    <li><a href="properties.html" class="">Properties</a></li>
                     <li><a href="">Details</a></li>
                     <li><a href="">Bookings</a></li>
                     <li><a href="">Contact</a></li>
 
                 </ul>
-                <a href="#" class="logo ta-c hide-for-desktop p-l-1">
-                    <h1 class="tt-u">Cornish Holiday Cottages</h1>
-                </a>
+               
                 <a href="#" class="burger-menu hide-for-desktop p-r-1">
                     <span></span>
                     <span></span>
@@ -38,23 +38,19 @@
                 </a>
             </nav>
             <div class="header-menu-dropdown has-fade">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="properties.html">Properties</a>
                 <a href="">Details</a>
                 <a href="">Bookings</a>
                 <a href="">Contact</a>
-              
 
             </div>
         </div>
-
     </header>
 
-    <section class="hero m-t-1">
-        <div class="container container-md">
+    <section class="hero">
+        <div class="container container-sm">
             <div class="hero-banner">
-
-
                 <div class="carousel">
                     <input type="radio" id="carousel-1" name="carousel[]" checked>
                     <input type="radio" id="carousel-2" name="carousel[]">
@@ -62,9 +58,15 @@
                     <input type="radio" id="carousel-4" name="carousel[]">
                     <input type="radio" id="carousel-5" name="carousel[]">
                     <ul class="carousel-items  carousel-items-w-md">
+                       
                         <li class="carousel-item flex flex-jc-c flex-ai-c">
-                            <!-- <h1 class="img-caption">Your next adventure begins here.</h1> -->
-                            <img src="/images/cottage.jpg" alt="" class="">
+
+                             <div class="img-caption">
+                                 <h1 class="">Cornwall Holiday Cottages</h1>
+                                 <p class="">Your next adventure begins here.</p>
+                                 <button class="btn">Start your search</button>
+                                </div>
+                            <img src="/images/cottage.jpg" alt="" class="img-overlay">
                         </li>
                         <li class="carousel-item">
                             <img src="/images/cottage-night-time.jpeg" alt="">
@@ -102,30 +104,34 @@
                     </div>
                 </div>
             </div>
-
-
+        </div>
+    </section>
+    
             <div class="hero m-t-1">
-                <div class="hero-img-item flex flex-jc-c flex-ai-c">
-                    <h1 class="hero-img-caption">A fresh breeze</h1>
-                    <img src="/images/beach.jpeg" alt="" class="img-overlay">
+          
+                    <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                        <h1 class="hero-img-caption">A fresh breeze</h1>
+                        <img src="/images/beach.jpeg" alt="" class="img-overlay">
+                    </div>
+                    <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                        <h1 class="hero-img-caption">Story time</h1>
+                        <img src="/images/cottage-night-time.jpeg" alt="" class="img-overlay">
+                    </div>
+                    <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                        <h1 class="hero-img-caption">Sail away</h1>
+                        <img src="/images/dock.jpeg" alt="" class="img-overlay">
+                    </div>
+                    <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                        <h1 class="hero-img-caption">Enchanting sunsets</h1>
+                        <img src="/images/pexels-photo-4687530.jpeg" alt="" class="img-overlay">
+                    </div>
+                    <div class="hero-img-item flex flex-jc-c flex-ai-c">
+                        <h1 class="hero-img-caption">Cottages</h1>
+                        <img src="/images/cottage6.jpeg" alt="" class="img-overlay">
+                    </div>
                 </div>
-                <div class="hero-img-item flex flex-jc-c flex-ai-c">
-                    <h1 class="hero-img-caption">Story time</h1>
-                    <img src="/images/cottage-night-time.jpeg" alt="" class="img-overlay">
-                </div>
-                <div class="hero-img-item flex flex-jc-c flex-ai-c">
-                    <h1 class="hero-img-caption">Sail away</h1>
-                    <img src="/images/dock.jpeg" alt="" class="img-overlay">
-                </div>
-                <div class="hero-img-item flex flex-jc-c flex-ai-c">
-                    <h1 class="hero-img-caption">Enchanting sunsets</h1>
-                    <img src="/images/pexels-photo-4687530.jpeg" alt="" class="img-overlay">
-                </div>
-                <div class="hero-img-item flex flex-jc-c flex-ai-c">
-                    <h1 class="hero-img-caption">Cottages</h1>
-                    <img src="/images/cottage6.jpeg" alt="" class="img-overlay">
-                </div>
-            </div>
+        
+           
             <!-- <div class="hero-boxes">
                 <div class="hero-img-item flex flex-jc-c flex-ai-c">
                     <h1 class="hero-img-caption">Bed and Breakfast</h1>
@@ -157,8 +163,8 @@
                 
                 
             </div> -->
-        </div>
-    </section>
+      
+    
 
     <section class="about m-t-2">
         <div class="container">
@@ -190,7 +196,7 @@
         <h1 class="ta-c m-b-2">Testimonials</h1>
         <div class="container">
 
-            <div class="testimonial-cards grid gutter-2 grid-sm-col-1 grid-md-col-2 grid-lg-col-3">
+            <div class="testimonial-cards grid gutter-2 grid-col-1 grid-sm-col-2 grid-md-col-2 grid-lg-col-3">
                 <div class="testimonial-card flex flex-jc-c flex-fd-c flex-ai-c p-2 bs">
                     <img src="images/quote-right-solid.svg" alt="" class="speech-mark">
                     <div class="img-container">
