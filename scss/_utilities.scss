@@ -11,50 +11,62 @@
 }
 
 .container {
-    width:85%;
-    margin: auto;
+    width:100%;
 
+    &-with-margin {
+        width:99%;
+        margin:auto;
+    }
 
-   
+    &-85w{
+        width:85%;
+        margin:auto;
+    }
+    &-90w{
+        width:90%;
+        margin:auto;
+    }
     
- &-lg {
-    @include breakpoint-down(large) 
-    {
-        width:95%;
-    }
- }
- &-md-f {
-    @include breakpoint-down(medium) 
-    {
-        width:100%;
-    }
- }
- &-lg-f {
-    @include breakpoint-up(large) 
-    {
-        width:100%;
-    }
- }
- &-xlg-f {
-    @include breakpoint-up(xlarge) 
-    {
-        width:100%;
-    }
- }
- &-xxlg-f {
-    @include breakpoint-down(xxlarge) 
-    {
-        width:100%;
-    }
- }
- &-lg {
-    @include breakpoint-down(medium) 
-    {
-        width:95%;
-    }
- }
+    &-lg {
+        @include breakpoint-down(large) 
+        {
+            width:95%;
+        }
+     }
+     &-md-f {
+        @include breakpoint-down(medium) 
+        {
+            width:100%;
+        }
+     }
+     &-lg-f {
+        @include breakpoint-up(large) 
+        {
+            width:100%;
+        }
+     }
+     &-xlg-f {
+        @include breakpoint-up(xlarge) 
+        {
+            width:100%;
+        }
+     }
+     &-xxlg-f {
+        @include breakpoint-down(xxlarge) 
+        {
+            width:100%;
+        }
+     }
+     &-lg {
+        @include breakpoint-down(medium) 
+        {
+            width:95%;
+        }
+     }
+        
     
 }
+
 
 
 .img-overlay 
@@ -263,6 +275,9 @@
     }
     &-jc-sb {
         justify-content: space-between;
+    }
+    &-jc-e {
+        justify-content: end;
     }
     &-jc-se {
         justify-content: space-evenly;

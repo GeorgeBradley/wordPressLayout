@@ -1,5 +1,9 @@
 .hero {
-    width: 100%;
+  
+    &-banner {
+        margin-bottom:10px;
+      
+    }
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
