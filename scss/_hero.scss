@@ -20,6 +20,7 @@
         min-width: 125px;
         @include breakpoint-up(small){
             width:30%;
+        
         }
        
         @include breakpoint-up(large) 
@@ -53,10 +54,13 @@
     &-img-caption {
         padding:10px;
         color:white;
-       
+       font-size: 1.8em;
         position: absolute;
         z-index: 1;
         transform:scale(1);
+        @include breakpoint-down(small){
+            font-size: 1.4em;
+        }
     }
    
 }

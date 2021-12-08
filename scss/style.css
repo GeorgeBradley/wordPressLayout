@@ -153,8 +153,8 @@ li {
   font-weight: bold;
   color: white;
   margin-right: auto;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-nav {
@@ -969,10 +969,17 @@ li {
 .hero-img-caption {
   padding: 10px;
   color: white;
+  font-size: 1.8em;
   position: absolute;
   z-index: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+@media (max-width: 36em) {
+  .hero-img-caption {
+    font-size: 1.4em;
+  }
 }
 
 /**
