@@ -1,0 +1,36 @@
+
+.enquiry {
+
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+form {
+ 
+  background-color: aquamarine;
+
+ height:fit-content;
+
+ border-radius: 20px;
+
+margin-top: auto;
+margin-bottom: auto;
+}
+.form-row {
+    display:flex;
+    gap:10px;
+    .column {
+        display:flex;
+       flex-direction: column;
+       gap:0.3em;
+       font-weight: bold;
+      
+ 
+    }
+}
+
+.form-row input {
+    padding:5px;
+}

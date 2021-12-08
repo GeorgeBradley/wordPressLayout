@@ -21,12 +21,27 @@
     &-85w{
         width:85%;
         margin:auto;
+        
     }
     &-90w{
         width:90%;
         margin:auto;
     }
+
+    &-75w{
+        margin:75%;
+        margin:auto;
+    }
     
+    &-lg-75w
+    {
+        @include breakpoint-up(large) {
+            width:60%;
+            margin:auto;
+        }
+    }    
+
+  
     &-lg {
         @include breakpoint-down(large) 
         {
@@ -671,7 +686,6 @@
 
 
 }
-
 
 
 

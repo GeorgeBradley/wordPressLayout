@@ -11,7 +11,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
   background-color: ghostwhite;
 }
 
@@ -51,9 +51,6 @@ li {
 }
 
 .header {
-  border-bottom: 0.03em solid #101817;
-  padding-left: 10px;
-  padding-right: 10px;
   position: -webkit-sticky;
   position: sticky;
   z-index: 1000;
@@ -61,13 +58,15 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #22313f;
+  background-color: #304355;
 }
 
-@media (max-width: 62em) {
-  .header {
-    padding: 10px;
-  }
+.header .logo-container img {
+  width: 70px;
+}
+
+.header .btn {
+  margin-right: auto;
 }
 
 @media (max-width: 62em) {
@@ -96,7 +95,7 @@ li {
   z-index: 10;
   padding: 1.625rem;
   border-radius: 1px;
-  top: 50px;
+  top: 70px;
   left: 0;
   right: 0;
   width: 50%;
@@ -150,34 +149,24 @@ li {
 }
 
 .header .logo {
-  font-size: 0.6em;
+  font-size: 0.8em;
   font-weight: bold;
+  color: white;
+  margin-right: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  color: white;
 }
 
 .header-nav {
-  width: 100%;
-  height: 100%;
   position: relative;
 }
 
 .header-nav .nav-items {
-  height: 100%;
   position: relative;
-  width: 50%;
 }
 
 .header-nav .nav-items li {
-  width: 100%;
-  height: 100%;
-  border-left: 0.03em solid #101817;
-  background-color: #22313f;
-}
-
-.header-nav .nav-items li:last-child {
-  border-right: 0.03em solid #101817;
+  background-color: #304355;
 }
 
 .header-nav .nav-items a {
@@ -192,9 +181,7 @@ li {
           align-items: center;
   color: white;
   font-weight: bold;
-  height: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 20px;
   border-radius: 1px;
 }
 
@@ -202,7 +189,7 @@ li {
   color: black;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
-  background-color: #9DD7C3;
+  background-color: white;
 }
 
 .header-nav .nav-items .nav-item-active {
@@ -251,6 +238,18 @@ li {
 .container-90w {
   width: 90%;
   margin: auto;
+}
+
+.container-75w {
+  margin: 75%;
+  margin: auto;
+}
+
+@media (min-width: 62em) {
+  .container-lg-75w {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 62em) {
@@ -1248,10 +1247,9 @@ li {
 }
 
 .img-container {
-  background-color: blueviolet;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 10%;
   position: absolute;
   top: -50px;
 }
@@ -1403,5 +1401,50 @@ li {
 .property .price-box .price {
   padding: 10px;
   font-size: 2em;
+}
+
+.enquiry {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+form {
+  background-color: aquamarine;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3em;
+  font-weight: bold;
+}
+
+.form-row input {
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */
