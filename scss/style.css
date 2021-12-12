@@ -12,7 +12,10 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Oxygen', sans-serif;
-  background-color: ghostwhite;
+}
+
+body {
+  background-color: #F5F6F7;
 }
 
 body.no-scroll {
@@ -225,6 +228,11 @@ li {
   width: 100%;
 }
 
+.container-60w {
+  width: 60%;
+  margin: auto;
+}
+
 .container-with-margin {
   width: 99%;
   margin: auto;
@@ -237,11 +245,6 @@ li {
 
 .container-90w {
   width: 90%;
-  margin: auto;
-}
-
-.container-75w {
-  margin: 75%;
   margin: auto;
 }
 
@@ -502,6 +505,11 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.flex-fw-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-jc-e {
@@ -769,9 +777,29 @@ li {
   padding-right: 5em;
 }
 
-.bs {
+.bs-1 {
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bs-2 {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.bs-3 {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bs-4 {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.bs-5 {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 @media (min-width: 36em) {
@@ -1265,10 +1293,13 @@ li {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .testimonials .testimonial-card {
   border-radius: 20px;
+  background-color: #FFFFFF;
   margin-top: 60px;
   position: relative;
 }
@@ -1453,5 +1484,126 @@ form {
 
 .form-row input {
   padding: 5px;
+}
+
+.see-also-image-container {
+  width: 100%;
+}
+
+.see-also img {
+  width: 100%;
+  height: 100%;
+}
+
+.see-also {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.see-also-img-item {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 40%;
+  min-width: 125px;
+  max-height: 300px;
+  min-height: 150px;
+  text-align: center;
+}
+
+@media (min-width: 36em) {
+  .see-also-img-item {
+    width: 30%;
+  }
+}
+
+@media (min-width: 62em) {
+  .see-also-img-item {
+    width: 20%;
+  }
+}
+
+.see-also-img-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.see-also-img-item:hover {
+  -webkit-filter: invert(0.3);
+          filter: invert(0.3);
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 24rem;
+          flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  -webkit-box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 400ms ease-out;
+  transition: -webkit-transform 400ms ease-out;
+  transition: transform 400ms ease-out;
+  transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+@supports (display: grid) {
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(24rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
