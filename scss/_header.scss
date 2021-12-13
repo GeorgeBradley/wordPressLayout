@@ -137,7 +137,8 @@
 
             }
          
-            a {
+            a
+            {
                 display:flex;
                 justify-content: center;
                 align-items: center;         
@@ -149,15 +150,12 @@
    
             }
 
-            a:hover {
+            a:hover,.nav-item-active  {
                 color: rgb(0, 0, 0);
                 transition: 200ms ease-in-out;
                 background-color:white;
             }
-            .nav-item-active {
-                color:white;
-                font-weight: bold;
-            }
+            
         }
     }
 

@@ -188,16 +188,11 @@ li {
   border-radius: 1px;
 }
 
-.header-nav .nav-items a:hover {
+.header-nav .nav-items a:hover, .header-nav .nav-items .nav-item-active {
   color: black;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   background-color: white;
-}
-
-.header-nav .nav-items .nav-item-active {
-  color: white;
-  font-weight: bold;
 }
 
 .overlady {
@@ -1496,6 +1491,7 @@ form {
 }
 
 .see-also {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1510,7 +1506,7 @@ form {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  width: 40%;
+  width: 100%;
   min-width: 125px;
   max-height: 300px;
   min-height: 150px;
