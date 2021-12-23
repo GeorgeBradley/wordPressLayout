@@ -50,7 +50,13 @@ li {
 }
 
 
-
+.stack-on-mobile {
+    @include breakpoint-down(small){
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
     
 .btn {
     padding:10px;
@@ -70,4 +76,9 @@ img {
 
 .section-title {
     font-size:1.9rem;
+}
+
+.bg-dark {  
+    color:white;
+    background-color:#304355;
 }
