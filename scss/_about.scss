@@ -1,7 +1,17 @@
-.about-image {
-  
+.about-row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-.about-image {
-  
+.about-text {
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 100%;
+    position: relative;
+    -webkit-justify-content: center;
+    justify-content: center;
 }

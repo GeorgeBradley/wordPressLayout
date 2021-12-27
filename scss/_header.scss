@@ -4,7 +4,7 @@
     .logo-container {
 
         img {
-            width:70px;
+            width:40px;
         }
        
     }
@@ -13,7 +13,8 @@
  }
 
     @include breakpoint-down(large){
-        padding:20px;
+        padding-top:20px;
+        padding-bottom:20px;
     }
     
 
