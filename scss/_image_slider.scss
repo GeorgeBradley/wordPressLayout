@@ -163,7 +163,7 @@
 
         &:before,
         &:after {
-          content: "\f2ba";
+          content: "";
           position: absolute;
           width: inherit;
           height: inherit;
@@ -210,7 +210,7 @@
       left: 0;
       text-align: center;
       width: 100%;
-      z-index: 3;
+      z-index: 2000;
 
       > label {
         border: 1px solid #fff;

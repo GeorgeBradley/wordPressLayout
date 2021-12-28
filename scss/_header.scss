@@ -179,3 +179,11 @@
    
 }
 
+.section-title::after {
+    background: #d6d6d6;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 25px auto;
+    width: 20%;
+}

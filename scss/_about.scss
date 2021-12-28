@@ -1,17 +1,29 @@
-.about-row {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+
+.about {
+    
+    .content {
+    
+        height:100%;
+    }
+
+   
+}
+.about-image {
+
+
+   
+    max-width:100%;
+    height:clamp(200px, 0px,1000px);
+
+
 }
 
-.about-text {
-    -webkit-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 100%;
-    position: relative;
-    -webkit-justify-content: center;
-    justify-content: center;
+
+.about-image img {
+
+
+
+
+
+    
 }

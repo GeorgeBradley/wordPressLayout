@@ -474,10 +474,12 @@
 
     &-col-1 {
         grid-template-columns: 1fr;
+        
  
     }
     &-col-2 {
         grid-template-columns: 1fr 1fr;
+        
     }
     &-col-3 {
         grid-template-columns: 1fr 1fr 1fr;
@@ -658,7 +660,9 @@
       flex-direction: column;
     }
 
-
+&-as-fe {
+  align-self: flex-end;
+}
      
     &-fd-c
     {
