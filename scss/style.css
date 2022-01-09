@@ -3087,6 +3087,16 @@ img {
   }
 }
 
+.t1 {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.t2 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
 .hero {
   overflow: hidden;
 }
@@ -3341,6 +3351,7 @@ img {
   width: 50px;
   top: 0;
   right: 0;
+  display: none;
   padding: 10px;
 }
 
@@ -3348,28 +3359,48 @@ img {
   width: 70px;
   height: 70px;
   border-radius: 10%;
-  position: absolute;
-  top: -30px;
+  z-index: 200;
 }
 
 .img-container .profile-pic {
+  border: 5px solid white;
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.testimonials .fa-quote-right {
+  font-size: 4em;
+  color: #00ccff;
+}
+
+.testimonials .stars i {
+  color: rgba(236, 214, 19, 0.603);
 }
 
 .testimonials .name {
   font-size: 1.1em;
+  font-weight: lighter;
   margin-bottom: 10px;
+  margin: 0;
 }
 
 .testimonials .testimonial-card {
-  border-radius: 20px;
-  background-color: #FFFFFF;
-  margin-top: 60px;
   position: relative;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.testimonials .testimonial-card::after {
+  top: -120px;
+  left: -130px;
+  width: 200px;
+  height: 200px;
+  background: #aee7ee;
+  background: radial-gradient(circle, #aee7ee 0%, #8bceec 21%, #88ccec 23%, #6cb7ea 40%, #086ee6 100%);
+  position: absolute;
 }
 
 .testimonials .testimonial-card img {
@@ -3589,6 +3620,11 @@ footer .sm-links i {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 40px;
+}
+
+.property-details {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 
 .see-also-image-container {
@@ -3836,5 +3872,23 @@ p {
 
 .back-to-top {
   font-size: 1.4em;
+}
+
+.enquiry-form label {
+  margin: 10px 0px 10px;
+}
+
+.enquiry-form input {
+  padding: 10px;
+  border: none;
+}
+
+.enquiry-form .column {
+  width: 100%;
+}
+
+.enquiry-form button {
+  width: 70%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,15 +16,12 @@
 
     <header class="header">
         <div class="overlay has-fade"></div>
-
-        <div class="container container-md-f">
-
-
+        <div class="container-fluid">
             <nav class="header-nav flex flex-jc-sb flex-ai-c">
                 <a href="#" class="logo p-l-1">
-                    <div class="logo-container flex flex-ai-c gutter-2">
+                    <div class="logo-container flex flex-ai-c gap-2">
                         <img src="/images/logo_smaller.png" alt="">
-                        <h1 class="header-logo tt-u">
+                        <h1 class="logo-text tt-c ta-c">
                             Cornish Holiday Cottages </h1>
 
                     </div>
@@ -35,7 +32,7 @@
                     <li class=""><a href="index.html" class="nav-item-active">Home</a></li>
                     <li><a href="properties.html" class="">Properties</a></li>
 
-                    <li><a href="">Bookings</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
                     <li><a href="">Contact</a></li>
 
                 </ul>
@@ -52,13 +49,14 @@
                 <a href="index.html">Home</a>
                 <a href="properties.html">Properties</a>
                 <a href="">Details</a>
-                <a href="">Bookings</a>
+                <a href="bookings.html">Bookings</a>
                 <a href="">Contact</a>
 
             </div>
 
         </div>
     </header>
+
 
     <nav class="property-details-nav">
 
@@ -75,12 +73,11 @@
 
 
     </nav>
-    <section class="container-60w property-details flex flex-ai-c">
-        
-
-
-        <div class="container flex flex-fd-c flex-fw-w w-100">
-            <div class="property-title p-t-1 p-b-1">
+    <section class="container property-details flex flex-fd-c-lg gap-4">
+    
+        <div class="flex flex-fd-c flex-fw-w t1 flex-jc-se">
+           <div class="">
+                 <div class="property-title p-t-1 p-b-1">
                 <h1>Gwelvor</h1>
                 <h5>Newquay, Cornwall</h5>
             </div>
@@ -132,21 +129,19 @@
                 </div>
             </div>
 
+           </div>
+          
         </div>
-        <section class="enquiry">
 
-    
-    
-        </section>
-        <form action="" class="bs-1">
+        <form action="" class="enquiry-form bs-1 flex flex-fd-c p-1 m-t-2 t2">
             <h1 class="ta-c m-b-1">Enquiry</h1>
             <div class="form-row">
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                     <label for="">First Name</label>
                     <input type="text" class="bs-2">
                 </div>
 
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                     <label for="">Last Name</label>
                     <input type="text" class="bs-2">
                 </div>
@@ -154,11 +149,11 @@
 
         
             <div class="form-row">
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                 <label for="">Address</label>
                 <input type="text" class="bs-2">
                 </div>
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                     <label for="">Preferred Location</label>
                     <input type="text" class="bs-2">
                 </div>
@@ -166,13 +161,7 @@
 
             <div class="form-row">
 
-               
-            
-
-            </div>
-            <div class="form-row">
-
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                     <label for="">Email</label>
                     <input type="email" class="bs-2">
                 </div>
@@ -181,12 +170,12 @@
             </div>
             <div class="form-row">
 
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
                     <label for="">Date from</label>
                     <input type="date" class="bs-2">
                 </div>
 
-                <div class="column">
+                <div class="column flex flex-fd-c gap-2">
 
                     <label for="">Date To</label>
                     <input type="date" class="bs-2">
